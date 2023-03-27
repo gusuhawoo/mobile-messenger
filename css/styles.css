@@ -43,5 +43,9 @@ body {
   color: rgba(0, 0, 0, 0.4);
 }
 #login-form input:focus {
-  border-color: var(--yellow);
+  border-color: var(--hotpink);
+}
+#login-form input[type='submit'] {
+  background-color: var(--hotpink);
+  cursor: pointer;
 }
