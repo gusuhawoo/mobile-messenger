@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 @import 'reset.css';
 @import 'variables.css';
-@import 'status-bar.css';
-@import 'login.css';
+/* Components */
+@import 'components/status-bar.css';
+/* Screens */
+@import 'screens/login.css';
 
 body {
   /* background-color: lightpink; */
