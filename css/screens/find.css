@@ -63,6 +63,7 @@
 }
 .open-post__photo {
   position: relative;
+  cursor: pointer;
 }
 .open-post__photo img {
   width: 120px;
@@ -84,3 +85,24 @@
 .open-post__heart-count span {
   margin-left: 3px;
 }
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+.open-post__photo:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
+}
+/* will-change 
+: Provides a rendering hint to the user agent, 
+stating what kinds of changes the author expects to perform on the element. */
